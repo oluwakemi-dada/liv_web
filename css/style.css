@@ -2,7 +2,7 @@
   --primary-color: #11a59a;
   --font-color: #333;
   --bg-white: #fff;
-  --bg-light: #faf9f9;
+  --bg-light: #f4faf9;
   --bg-dark: #333;
   --max-width: 1280px;
   --bg-footer: #081f26;
@@ -51,7 +51,7 @@ h4 {
 /* ----------------------------------------------------------------------------------------------------- */
 /* Header: Main */
 #main-header {
-  background: #fff;
+  background: var(--bg-light);
   position: relative;
   height: 90vh;
 }
@@ -169,7 +169,7 @@ h4 {
 /* -------------------------------------------------------------------------------------------------- */
 /* Home: Section - A */
 #home-a {
-  background: var(--bg-light);
+  background: var(--bg-white);
   padding-top: 15rem;
 }
 
@@ -211,6 +211,10 @@ h4 {
 
 /* --------------------------------------------------------------------------------------- */
 /* Section - Services */
+#services {
+  background: var(--bg-light);
+}
+
 #services .container {
   padding: 0 5rem;
 }
@@ -257,7 +261,6 @@ h4 {
 /* ---------------------------------------------------------------------------------------------- */
 /* Section - Contact */
 #contact {
-  background: var(--bg-light);
   padding-bottom: 15rem;
 }
 
