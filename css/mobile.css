@@ -1,0 +1,261 @@
+@media (max-width: 1024px) {
+  #home-a .container .home-a-grid {
+    grid-gap: 2rem;
+  }
+
+  #home-a .container .home-a-grid .grid-item-a img {
+    padding: 1.5rem;
+  }
+
+  #services .container .services-grid {
+    grid-gap: 4rem;
+  }
+
+  #services .container .services-grid .services-text {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #main-header .container .header-content h1 {
+    font-size: 4rem;
+  }
+
+  #home-a .container > div:first-child {
+    padding: 0 5rem;
+  }
+
+  #home-a .container .home-a-grid {
+    grid-gap: 1rem;
+    margin: 5rem 1rem 2rem;
+  }
+
+  #home-a {
+    padding-top: 12rem;
+  }
+
+  #home-a .container .home-a-grid .grid-item-a img {
+    padding: 1rem;
+  }
+
+  #services .container {
+    padding: 0 2rem;
+  }
+
+  #services .container .services-grid {
+    grid-gap: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #main-header #main-nav {
+    height: 100px;
+  }
+
+  #main-header #main-nav > div {
+    flex-direction: column;
+  }
+
+  #main-header #main-nav ul a {
+    margin: 0 1rem;
+  }
+
+  #main-header .container .header-content h1 {
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .btn {
+    margin-top: 3rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  #home-a {
+    padding-top: 7rem;
+  }
+
+  #home-a .container h2 {
+    padding-bottom: 1rem;
+  }
+
+  #home-a .container > div:first-child {
+    padding: 0 1.5rem;
+  }
+
+  #home-a .container .home-a-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    margin: 5rem 0 2rem;
+  }
+
+  #services .container > div:first-child {
+    padding-bottom: 2rem;
+  }
+
+  #services .container > div:first-child p {
+    padding: 0 1rem;
+  }
+
+  #services .container .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid.grid-reverse > div:first-child {
+    grid-column: 1;
+  }
+
+  #services .container .services-grid img {
+    margin-bottom: 4rem;
+  }
+  #services .container .services-grid:last-child img {
+    margin-bottom: 0;
+  }
+
+  #services .container .services-grid {
+    border-bottom: 1px dotted #c0bfbf;
+    grid-gap: 0;
+  }
+
+  #services .container .services-grid:last-child {
+    border-bottom: none;
+  }
+
+  #contact .container .contact-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0.7rem;
+  }
+
+  #contact .container .contact-grid > div:first-child input,
+  #contact .container .contact-grid > div:first-child textarea {
+    padding: 0.8rem;
+  }
+
+  #contact .container .contact-grid > div:first-child a {
+    padding: 0.8rem 0;
+  }
+
+  /* Footer */
+  #footer .container > div {
+    grid-template-areas:
+      "num num num"
+      "media media media"
+      "download download download"
+      "copy-right copy-right copy-right";
+  }
+
+  #footer .container > div .num-address {
+    text-align: center;
+  }
+
+  #footer .container > div > div {
+    border-bottom: 1px dotted #4b4b4b;
+  }
+
+  #footer .container > div .download,
+  #footer .container > div .copyright {
+    border-bottom: none;
+  }
+
+  #header-inner #main-nav {
+    height: 100px;
+  }
+
+  #header-inner #main-nav > div {
+    flex-direction: column;
+  }
+
+  #header-inner #main-nav ul a {
+    margin: 0 1rem;
+  }
+
+  #header-inner .container .header-content h1 {
+    font-size: 1.8rem;
+    margin-top: 9rem;
+  }
+
+  #tnc .container h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  #header-inner .container .header-content h1 {
+    font-size: 1.5rem;
+    margin-top: 8rem;
+  }
+
+  #tnc .container h2 {
+    font-size: 1.3rem;
+  }
+
+  #footer .container > div .num-address {
+    padding: 0;
+  }
+
+  #footer .container > div .num-address p {
+    font-size: 1rem;
+  }
+
+  #footer .container > div .copyright {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  #main-header {
+    height: 95vh;
+  }
+
+  #main-header .container .header-content h1 {
+    font-size: 2.2rem;
+    padding-bottom: 1rem;
+    padding-top: 8rem;
+  }
+
+  .btn {
+    margin-top: 1.8rem;
+  }
+}
+
+/* ------------------------------------------------------------------------- */
+/* Landscape */
+@media (max-height: 500px) {
+  #main-header .container .header-content {
+    padding-bottom: 3rem;
+  }
+
+  #main-header .container .header-content h1 {
+    font-size: 2.7rem;
+    padding-top: 9rem;
+    padding-bottom: 0.5rem;
+  }
+
+  #main-header .container .header-content p {
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-height: 360px) {
+  #main-header .container .header-content {
+    padding-bottom: 4rem;
+  }
+
+  #main-header .container .header-content h1 {
+    font-size: 2.5rem;
+    padding-top: 10rem;
+    padding-bottom: 0.2rem;
+  }
+
+  #main-header .container .header-content p {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+}

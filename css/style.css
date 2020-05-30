@@ -1,0 +1,436 @@
+:root {
+  --primary-color: #11a59a;
+  --font-color: #333;
+  --bg-white: #fff;
+  --bg-light: #faf9f9;
+  --bg-dark: #333;
+  --max-width: 1280px;
+  --bg-footer: #081f26;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: var(--bg-white);
+  font-family: "Open Sans", sans-serif;
+  color: var(--font-color);
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.3;
+  margin-bottom: 0.55rem;
+  text-transform: capitalize;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* Header: Main */
+#main-header {
+  background: #fff;
+  position: relative;
+  height: 90vh;
+}
+
+#main-header #main-nav {
+  background: var(--bg-white);
+  height: 62px;
+  box-shadow: 0 1px 4px #d1d0d0;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+}
+
+#main-header #main-nav > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4rem;
+}
+
+#main-header #main-nav img {
+  height: 60px;
+  width: 70px;
+}
+
+#main-header #main-nav ul {
+  display: flex;
+}
+
+#main-header #main-nav ul a {
+  padding: 0.5rem 0.5rem;
+  margin: 0 1.2rem;
+  font-weight: bold;
+}
+
+#main-header #main-nav ul a:hover {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+#main-header .container .header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 90vh;
+  padding-top: 2rem;
+}
+
+#main-header .container .header-content h1 {
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  font-size: 5rem;
+}
+
+#main-header .container .header-content p {
+  font-size: 1.5rem;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+/* Header: Inner */
+#header-inner {
+  height: 200px;
+}
+
+#header-inner #main-nav {
+  background: var(--bg-white);
+  height: 62px;
+  box-shadow: 0 1px 4px #d1d0d0;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+}
+
+#header-inner #main-nav > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4rem;
+}
+
+#header-inner #main-nav img {
+  height: 60px;
+  width: 70px;
+}
+
+#header-inner #main-nav ul {
+  display: flex;
+}
+
+#header-inner #main-nav ul a {
+  padding: 0.5rem 0.5rem;
+  margin: 0 1.2rem;
+  font-weight: bold;
+}
+
+#header-inner #main-nav ul a:hover {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+#header-inner .container .header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+}
+
+#header-inner .container .header-content h1 {
+  font-size: 2.3rem;
+  margin-top: 7rem;
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+/* Home: Section - A */
+#home-a {
+  background: var(--bg-light);
+  padding-top: 15rem;
+}
+
+#home-a .container > div:first-child {
+  text-align: center;
+  padding: 0 5rem;
+}
+
+#home-a .container > div:first-child p {
+  font-size: 1.1rem;
+}
+
+#home-a .container .home-a-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem;
+  margin: 5rem 3rem 2rem;
+}
+
+#home-a .container .home-a-grid .grid-item-a {
+  padding: 1rem;
+  border: 1px solid #e9e9e9;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px #e9e9e9;
+}
+
+#home-a .container .home-a-grid .grid-item-a img {
+  padding: 2rem 3rem;
+}
+
+#home-a .container .home-a-grid .grid-item-a > div {
+  text-align: center;
+}
+
+#home-a .container .home-a-grid .grid-item-a > div p {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* --------------------------------------------------------------------------------------- */
+/* Section - Services */
+#services .container {
+  padding: 0 5rem;
+}
+
+#services .container > div:first-child {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+#services .container > div:first-child p {
+  font-size: 1.1rem;
+  padding: 0 5rem;
+}
+
+#services .container .services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  grid-auto-flow: dense;
+  grid-gap: 5rem;
+  margin-bottom: 3rem;
+}
+
+.services-grid.grid-reverse {
+  grid-template-columns: 1.1fr 1fr;
+}
+
+.services-grid.grid-reverse > div:first-child {
+  grid-column: 2;
+}
+
+#services .container .services-grid .services-text {
+  padding: 5rem;
+}
+
+#services .container .services-grid .services-text p {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+#services .container .services-grid img {
+  padding: 1rem;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+/* Section - Contact */
+#contact {
+  background: var(--bg-light);
+  padding-bottom: 15rem;
+}
+
+#contact .container .contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+#contact .container .contact-grid > div:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact .container .contact-grid > div:first-child h2 {
+  justify-self: flex-start;
+}
+
+#contact .container .contact-grid > div:first-child label {
+  margin-bottom: 1rem;
+}
+
+#contact .container .contact-grid > div:first-child input,
+#contact .container .contact-grid > div:first-child textarea {
+  padding: 1.2rem;
+}
+
+#contact .container .contact-grid > div:first-child textarea {
+  height: 150px;
+}
+
+#contact .container .contact-grid > div:first-child div {
+  padding: 0 10%;
+}
+
+#contact .container .contact-grid > div:first-child a {
+  text-align: center;
+  width: 100%;
+  padding: 1.1rem 0;
+}
+
+/* --------------------------------------------------------------------------------------- */
+/* Terms And Conditions */
+#tnc {
+  padding: 1rem 0 15rem;
+}
+
+#tnc .container h2 {
+  margin-bottom: 1.7rem;
+  font-size: 1.7rem;
+}
+
+#tnc .container h3 {
+  color: var(--primary-color);
+  margin-top: 2rem;
+}
+
+#tnc .container .numbering li {
+  margin-left: 2rem;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+/* Footer */
+#footer {
+  padding-top: 2rem;
+  background-color: var(--bg-footer);
+  color: #fff;
+}
+
+#footer .container > div {
+  display: grid;
+  grid-template-areas:
+    "num media download"
+    "copy-right copy-right copy-right";
+  grid-gap: 1rem;
+  align-items: center;
+}
+
+.num-address {
+  grid-area: num;
+}
+
+.social {
+  grid-area: media;
+}
+
+.download {
+  grid-area: download;
+}
+
+.copyright {
+  grid-area: copy-right;
+}
+
+#footer .container > div > div {
+  padding: 2rem 1rem;
+}
+
+.copyright {
+  grid-area: copy-right;
+}
+
+#footer .container > div .num-address p {
+  font-size: 1.1rem;
+  padding-bottom: 0.1rem;
+}
+
+#footer .container > div .num-address p i {
+  font-size: 1.3rem;
+  padding-right: 0.7rem;
+}
+
+#footer .container > div .social {
+  text-align: center;
+}
+
+#footer .container > div .social a {
+  color: #fff;
+}
+
+#footer .container > div .social a i {
+  padding: 1rem 1rem;
+}
+
+#footer .container > div .social a:hover {
+  color: var(--primary-color);
+}
+
+#footer .container > div .download h3 {
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+
+#footer .container > div .download > *:last-child {
+  padding-top: 0.8rem;
+}
+
+#footer .container > div .copyright {
+  border-top: 1px dotted #4b4b4b;
+  padding: 0.7rem 0;
+  text-align: center;
+}
+
+#footer .container > div .copyright p a {
+  color: #fff;
+}
+
+#footer .container > div .copyright p a:hover {
+  color: var(--primary-color);
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* curves */
+#curve-header {
+  background: var(--bg-light);
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#curve-header > * {
+  position: absolute;
+  top: 0;
+}
+
+#curve-footer {
+  background: var(--bg-light);
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#curve-footer > * {
+  position: absolute;
+  bottom: 0;
+}

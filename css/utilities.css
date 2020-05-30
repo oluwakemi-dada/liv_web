@@ -1,0 +1,67 @@
+.container {
+  max-width: var(--max-width);
+  padding: 0 2rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  padding: 0.7rem 1.7rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin: 1.5rem 0;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--bg-dark);
+  color: #fff;
+}
+
+.py-1 {
+  padding: 1.5 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.py-5 {
+  padding: 5rem 0;
+}
+
+.section-title {
+  padding-bottom: 0.6rem;
+  font-size: 2.3rem;
+  font-weight: 100;
+}
+
+.title {
+  padding-bottom: 0.4rem;
+  font-size: 1.7rem;
+  font-weight: 100;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
