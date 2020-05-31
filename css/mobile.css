@@ -195,10 +195,6 @@
     font-size: 1.3rem;
   }
 
-  #footer .container > div .num-address {
-    padding: 0;
-  }
-
   #footer .container > div .num-address p {
     font-size: 1rem;
   }
@@ -208,7 +204,7 @@
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 320px) {
   #main-header {
     height: 95vh;
   }
